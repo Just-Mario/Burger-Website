@@ -606,6 +606,12 @@ textarea{
     color: var(--secondary);
     font-weight: bolder;
 }
+.twtr, .fb, .ig{
+    min-width: 40px;
+    max-width: 50px;
+    margin: 0 auto; 
+}
+
 
 /*----------POP-UP---------*/
 
@@ -797,6 +803,11 @@ textarea{
 
 .leading{
     font-size: 1.2em;
+}
+.twtr, .fb, .ig{
+    min-width: 40px;
+    max-width: 50px;
+    margin: 0 auto; 
 }
 
 }
