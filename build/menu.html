@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu😋</title>
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div id="menu-bar">
+         <Strong>Mario🤩Learns.</Strong>
+       <div id="top-menu" onclick="OnClickMenu()">
+           <div id="bar-1" class="bar"></div>
+           <div id="bar-2" class="bar"></div>
+           <div id="bar-3" class="bar"></div>
+       </div>
+      <ul class="nav" id="nav">
+         <li><a href="index.html">home</a></li> 
+          <li><a href="menu.html#drink-order">drinks</a></li>
+          <li><a href="menu.html#desserts">desserts</a></li>
+   </div> 
+    <div id="menu">
+<section class="title">
+<h1>The Burger House.</h1>
+</section>
+
+<section class="dish">
+<h2>Special Burger</h2>
+<p class="info">Spicy blend of Mexican cheeses wrapped in sheets of phyllo and baked until golden.</p>
+<p class="photo"><img src="Assets/Burgers/combo1img2.png"  height="200px" alt="Picture of Special Burger Combo"></p>
+<button class="price">R69.99</button>
+</section>
+
+<section class="dish">
+<h2>Crayzeeh Burger</h2>
+<p class="info"> Made with 100% secret ingredient Beef Burger, salsa, and our handmade flour Bread.</p>
+<p class="photo"><img src="Assets/Burgers/burgeryum.png"  height="200px" alt="Picture of Special Burger Combo"></p>
+<button class="price"> R79.99</button>
+</section>
+
+<section class="dish">
+<h2>Chow-chow Burger</h2>
+<p class="info">Made with 100% secret ingredient Beef Burger, salsa, and our handmade flour Bread.</p>
+<p class="photo"><img src="Assets/Burgers/combo_3.png"  height="200px" alt="Picture of Special Burger Combo"></p>
+<a href="#"><button class="price"> R59.99</button></a>
+</section>
+
+<section class="dish">
+<h2>Mighty Ranch Burger</h2>
+<p class="info">Tender Beef Burger Patty slow grilled on the rotisserie, flavored with spicy and fragrant Ranch sauce. <em>Warning, very spicy!</em></p>
+<p class="photo"><img src="Assets/Burgers/ranch-burger.png"  height="180px" alt=""></p>
+<a href="#"><button class="price"> R99.99</button></a>
+</section>
+
+<section class="dish">
+<h2>New "Rio" Burger</h2>
+<p class="info">High Quality Beef Patty, marinated in lemongrass, garlic, and Mushroom sauce then grilled to perfection.</p>
+<p class="photo"><img src="Assets/Burgers/mario-burger.svg.png" height="200px" alt="Picture of Special Burger Combo"></p>
+<a href="#"><button class="price"> R90.99</button></a>
+</section>
+
+<section class="dish">
+<h2>2 by 2 Burgers</h2>
+<p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates eveniet ea dignissimos odit dolores!.</p>
+<p class="photo"><img src="Assets/Burgers/combo_2.png"  height="200px" alt="Picture of Special Burger Combo"></p>
+<button class="price">R79.99</button>
+</section>
+
+<div id="drinks-list">
+    <section id="drink-order">
+        <br>
+         <h1 class="drinks_title">Cold Drinks</h1>
+               <p class="leading_motivation"> Quench your thirst from the list of available drinks.</p>
+               <br>
+              <form class="drinks-form">
+               <fieldset>
+  <legend>Fizzy Drinks<em> Price @ R20.00 (250ml)</em></legend>
+    <ul>
+      <li><label><input type="checkbox" name="drinks[]" value="Coca Cola" checked>Coca Cola</label></li>
+      <li><label><input type="checkbox" name="drinks[]" value="spar-letta">Spar-letta</label></li>
+      <li><label><input type="checkbox" name="drinks[]" value="sprite">Sprite </label></li>
+      <li><label><input type="checkbox" name="drinks[]" value="cream/soda">Cream/Soda</label></li>
+      <li><label><input type="checkbox" name="drinks[]" value="Fanta">Fanta Orange</label></li>
+      <li><label><input type="checkbox" name="dricks[]" value="Stone ginger">Stone Ginger Ale</label></li>
+      <li><label><input type="checkbox" name="drinks[]" value="lemonade">Lemonde</label></li>
+    </ul>
+</fieldset>
+              <button class="ordernowBtn"><a href="#">Order</a></button>
+              <input type="reset"></p>
+              </form>
+    </section>
+</div>
+<section id="desserts-page">
+    <div id="desserts">
+    <div class="dessert-menu">
+            <h1 class="desserts-title">Desserts</h3>
+            <h3>Made from our original<br> Old recipe to bring you best tasting Ice Cream.</h2>
+            <h3>You can add any Extras on your item.</h3>
+            <h3>Choose anything you want...</h3>
+                <form id="dessert-extras">
+                <legend class="form-head">Ice Cream Specs</legend>
+        <fieldset>
+        <legend>Flavour<em>(Choose one)</em>:</legend>
+        <ul>
+      <li><label><input type="radio" name="crust" value="Vanills">Vanilla Ice Cream</label></li>
+      <li><label><input type="radio" name="crust" value="choc">Chocolate Ice Cream</label></li>
+      <li><label><input type="radio" name="crust" value="mint">Mint-Dream</label></li>
+      <li><label><input type="radio" name="crust" value="Strawberry">Strawberry</label></li>
+    </ul>
+  </fieldset>
+  <fieldset>
+  <legend>Toppings/Sauces<em>(Choose as many as you want @ R5.00)</em></legend>
+    <ul>
+      <li><label><input type="checkbox" name="toppings[]" value=" Choc-sauce" checked>Chocolate Sauce</label></li>
+      <li><label><input type="checkbox" name="toppings[]" value="Strawberry Sauce">Strawberry Sauce</label></li>
+      <li><label><input type="checkbox" name="toppings[]" value="Vanilla Sauce">Vanilla Sauce</label></li>
+      <li><label><input type="checkbox" name="toppings[]" value="Colour Sprinkles">Colour Sprinkles</label></li>
+      <li><label><input type="checkbox" name="toppings[]" value="Chocolate sprinkles">Chocolate sprinkles</label></li>
+      <li><label><input type="checkbox" name="toppings[]" value="Raisins">Almonds</label></li>
+      <li><label><input type="checkbox" name="toppings[]" value="Berries">Berries</label></li>
+    </ul>
+    
+  </fieldset>
+  <fieldset>
+  <legend>Special Requests???<em>(Tell us more detail about your Order:)</em></legend>
+  <textarea name="details" rows="4" cols="100"></textarea>
+  </fieldset>
+<button class="orderBtn"><a href="#">Order</a></button>
+<input type="reset"></p> 
+
+<div id="popup-wrapper">
+  <div class="popup">
+     <div class="popup-close">x</div>
+  <div class="pop-up-content">
+    <h4 class="normal-text">Your Order has been received</h4>
+      <h5>Thank you.</h5>
+   <a href="#menu">Go back to menu</a>
+   </div>
+  </div>
+</div>
+
+</form>
+
+    </div>
+      <div class="bye"><h1>We hope that you enjoyed your time here.</h1></div>
+    <div class="thanks">
+            <!-----SOCIAL-MEDIA-ICONS-HERE-->
+            <a href="#"><img class="fb" src="Assets/Social Media Icons/facebook-brands.svg" alt="Facebook Icon"></a>
+            <a href="#"><img class="twtr" src="Assets/Social Media Icons/twitter-square-brands.svg" alt="Facebook Icon"></a>
+            <a href="#"><img class="ig" src="Assets/Social Media Icons/instagram-brands.svg" alt="Facebook Icon"></a>  
+       <div class="scroll">
+       <a href="menu.html#menu-bar"><img src="Assets/Scroll-Up Button/chevron-circle-up-solid.svg" alt="Navigation Button"></a>
+      </div>
+    </div>
+</section>
+<div class="menu-bg" id="menu-bg"></div>
+    <div class="btm-text">
+ <p>Copyright: &copy; All content has been created by Mario 2020.</p>
+ </div>
+      <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,930 @@
+/*VARIABLES*/
+:root{
+    --primary: #daa520;
+    --secondary: #fff;
+    --gradient: linear-gradient(45deg, #8614ce,#18181a);
+    --myRgba: rgba(0,0,0,0.5);
+}
+/*RESET*/
+body, ul, li, p, a{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+li{
+    list-style-type: none;
+}
+
+/*BASE STYLES*/
+body{
+    font-family: 'lato', monospace;
+    overflow-x: hidden;
+    background-image: var(--gradient);
+}
+/*FONTS*/
+@font-face{
+    font-family: 'Fredericka the great';
+    src: url('assets/Fonts/FrederickatheGreat-Regular.ttf');
+    font-family: 'firasans';
+    src: url('assets/Fonts/FiraSans-Medium.ttf');
+}
+h3{
+    font-weight: normal;
+}
+
+h1{
+    font-size: 1.5em;
+}
+
+h2{
+    font-size: 1.6em;
+}
+
+h4{
+    font-size: 1.3em;
+    font-weight: bold;
+    font-family: 'Fredericka the great', monospace;
+    color: var(--primary);
+}
+h1, h2{
+    font-weight: bold;
+    font-family: 'Fredericka the great', monospace; 
+    color: var(--primary);
+}
+p{
+    color: #fff;
+}
+strong{
+    font-family: 'Matura MT script Capitals', monospace;
+    font-size: 1.5em;
+}
+.leading{
+    font-size: 2em;
+    font-weight: bolder;
+    font-family: 'Fredericka the great', monospace;
+}
+/*MOBILE STYLES*/
+.nav li a{
+    font-size: 1em;
+    color: #F9AB33;
+    text-transform: uppercase;
+    font-family: 'Poppins', monospace;
+}
+
+.nav li a:hover{
+    font-weight: bold;
+    color: #fff;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    margin-left: auto;
+}
+strong{
+    color: var(--primary);
+    padding: 0 15px;
+}
+/*-----Head-Flex------*/
+.site-nav{
+    padding: 20px 30px;
+    margin: 0 auto;
+    background-image: url('Assets/Burgers/MenuBurger.png');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: bottom left;
+    width:100%;
+    height: 500px;
+    position: relative;
+    top:0;
+    left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    height: 5em;
+}
+ .banner-text{
+    margin-left: auto;
+    margin-right: 100px;
+ }
+ 
+.best_quality{
+    color: var(--primary);
+}
+
+.leading{
+    border-top: 2px solid var(--primary);
+    border-bottom: 2px solid  var(--primary);
+    max-width: 350px;
+    min-width: 250px;
+    color: var(--secondary);
+}
+
+.sub-leading{
+    color: var(--primary);
+}
+     
+.est{
+    padding-top: 20px;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.intro-text{
+ max-width: 350px;  
+}
+.leading, .est, .intro-text, .sub-leading, .best_quality{
+    text-align: center;  
+}
+
+#advert{
+    margin: 0 auto;
+    width: 95%;
+}
+/*Advertisment Section*/
+.advert-left-col {
+    flex-basis: 50%;
+    text-align: right;
+}
+.advert-right-col img{
+    padding: 15px 20px;
+    max-width: 75%;
+}
+
+.advert-text{
+    max-width: 500px;
+    padding: 0 20px;
+    text-align: center;
+}
+/*Index Button(Crazeeh Burger Advert)*/
+.orderNow{
+    display: inline-block;
+    padding: 5px 6px;
+    outline: none;
+    border: 2px solid var(--secondary);
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    background: none;
+    color: var(--secondary);
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px #d38107;
+}
+
+.orderNow:hover{
+    background: var(--primary);
+}
+
+#footer{
+    padding: 20px 45px;
+}
+.social-media{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.social-media a img{
+    max-width: 100%;
+    width: 50px;
+    padding: 20px;
+}
+
+.closing{
+    padding: 30px 20px;
+    grid-column: 2/8;
+    grid-row: 2;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+span{
+    color: var(--primary);
+}
+.day{
+    font-weight: bold;
+    color: var(--primary);
+}
+.hours {
+    padding: 1em;  
+}
+
+/*-------------ABOUT US / CONTACT US--------------*/
+#information{
+    padding: 30px 30px;
+    background-image: url('Assets/about.png');
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position:bottom left;
+    width:100%;
+}
+
+#about-row{
+    margin: auto;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;  
+}
+.about-col{
+    flex-basis: 25%;
+    text-align: center;
+    background-color: var(--myRgba);
+    padding: 0 15px;
+    padding-bottom: 60px;
+    border-radius: 20px;
+    border-bottom: 2px solid #d38107;
+    margin: 15px;
+    box-shadow: 2px 2px 5px var(--primary);
+}
+.about-col h4{
+     font-family: 'lato', monospace;
+}
+#information h1{
+    text-align: center;
+}
+ #information h2{
+     text-align: center;
+     font-size: 1em;
+     color: var(--secondary);
+     margin-bottom: 50px;
+     font-family: 'lato', monospace;
+     max-width: 90%;
+ }
+/*---------CONTACT-FORM---------*/
+#contact{
+    padding: 30px 20px;
+    text-align: center;
+    background-color: var(--myRgba);
+    width: 70%;
+    margin: 100px auto;
+    border-radius: 15px;
+    border-bottom: 2px solid #d38107;
+}
+#contact form{
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    margin: 20px auto;
+}
+#contact h3{
+    color: var(--primary);
+    font-family: 'Fredericka the great', monospace;
+    font-weight: bolder;
+}
+.contact-leading{
+    text-align: center;
+}
+
+#contact form textarea, #contact form input{
+    width: 100%;
+    max-width: 400px;
+    margin: 10px 0;
+    background-color: var(--secondary);
+    border-radius: 20px;
+    text-align: center;
+    border: 2px solid var(--primary);
+}
+
+#contact .contact-button{
+    background: none;
+    border: 2px solid var(--primary);
+    padding: 5px 12px;
+    border-radius: 20px;
+    color: var(--secondary);
+    display: inline-block;/*Will help add margins to the button*/
+}
+
+#contact .contact-button:hover{
+    background: var(--primary);
+}
+
+.copyright{
+    width: 100%;
+    text-align: left;
+    background-color: var(--myRgba);
+    margin-top: 10px;
+}
+.scroll-1 img{
+    position: relative;
+    top: 8px;
+    left: 75%;
+    max-width: 50px;
+    width: 50%;  
+}
+
+.scroll-1 img:hover {
+    background-color: yellow;
+    border-radius: 50%;
+}
+
+/*---------MENU-PAGE----FLEX-BOX-LAYOUT-----------*/
+#menu {
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    margin-top:100px;
+    width: 95%;
+}
+
+.dish{
+    background-color: rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px #F9AB33;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 20px;
+    max-width: 250px;
+    /*transition: 1s;*/
+    cursor: pointer;
+}
+.dish h2{
+    color: var(--secondary);
+    font-size: 1.2em;
+}
+.dish em{
+    color: #ff0000
+}
+/*.dish:hover{
+    transform: scale(1.1);
+    z-index: 2;
+}
+*/
+.title {
+  background-color: #783F27;
+  color: #daa520;
+  font-size: 2.5em;
+  font-weight: normal;
+  font-family: 'Fredericka the great', sans-serif;
+  background-color: var(--myRgba);
+  box-shadow: 2px 2px 10px #F9AB33;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 20px;
+  width: 100%;
+}
+
+.title h1{
+    color: #fff;
+    text-align: center;
+}
+.price {
+  font-weight: bold;
+  padding: 5px;
+  width: 100%;
+  border: 1px solid var(--primary);
+  text-align: center;
+  margin-top: auto;
+  background: var(--primary);
+  cursor: pointer;
+}
+.price:hover{
+    background: #fff8dc;
+    border-radius: 15px;
+    transition: 1s;
+    color: #da0e0e;
+    font-size: 0.75em;
+}
+
+.photo{
+    text-align: center;
+}
+.info{
+    color: var(--primary);
+}
+em{
+    color: var(--primary);
+    font-weight: bolder;
+}
+b{
+    color: var(--primary);
+}
+.dish h2{
+    text-align: center;
+}
+
+/*--------------------MENU-DRINKS-LIST--ORDER-FORM-------*/
+#drinks-list{
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    width: 100%;
+}
+
+#drink-order{
+     padding-bottom: 15px;
+}
+
+#drink-order form {
+    padding: 30px 20px;
+    max-width: 450px;
+    margin:30px 20px;
+    background: var(--myRgba) ;
+    border-radius: 15px;
+}
+
+.drinks_title{
+    text-align: center;
+    padding: 20px;
+    color: var(--secondary);
+    font-family:'Fredericka the great', monospace;
+    width: 65%;
+    margin: 15px auto;
+    max-width: 350px;
+    text-align: center;
+    font-weight: bolder;
+    border-radius: 20px;
+}
+
+.leading_motivation{
+    text-align: center;
+    color: var(--primary);
+    font-family: 'Fredericka the great', monospace;
+    font-weight: bolder;
+}
+/*---------------Buttons-------------------*/
+.ordernowBtn a{
+    color: var(--primary);
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.ordernowBtn:hover, input[type=reset]:hover{
+    background-color: #fff;
+}
+
+.ordernowBtn {
+    background: none;
+    border-style: none;
+    border-radius: 15px;
+    background-color: var(--myRgba);
+    padding: 5px 15px;  
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px  5px var(--primary);
+}
+
+.orderBtn a{
+    color: var(--primary);
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.orderBtn:hover, input[type=reset]:hover{
+    background-color: #fff;
+}
+
+.orderBtn {
+    background: none;
+    border-style: none;
+    border-radius: 15px;
+    background-color: var(--myRgba);
+    padding: 5px 15px;  
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px  5px var(--primary);
+}
+form ul{
+    color: #d38107;
+}
+form li:hover{
+    font-weight: bold;
+    font-size: 1.3em;
+    color: #fff;
+}
+input[type=reset]{
+    color: #ff0000;
+    cursor: pointer;
+    background: none;
+    border-style: none;
+    border-radius: 15px;
+    background-color: var(--myRgba);
+    padding: 7px 15px;
+    font-weight: bold;
+}
+legend{
+    color: #fff;
+    font-weight: bold;
+    margin: auto;
+}
+fieldset{
+  margin-left: 20px;
+}
+textarea{
+    width: 100%;
+    min-width: 150px;
+    max-width: 350px; 
+}
+
+/*-----------DESSERTS----SECTION--------------*/
+#desserts-page{
+    padding: 30px 0;
+    margin: 0 auto;
+    width: 95%;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.welcome-text{
+    max-width: 450px;
+    min-width: 250px;
+    text-align: center;
+    font-weight: bolder;
+    color: rgb(255, 216, 43);
+    line-height: 1.8;
+    margin: auto;
+}   
+#dessert-extras{
+    background-image: url('assets/Desserts/Ice-cream/Magnum.png');
+    background-repeat: no-repeat;
+}
+
+.welcome-text p{
+    padding: 20px 35px;
+}
+.heading{
+    font-size: 1.5em;
+}
+.heading, .sub-heading{
+    font-family: 'Fredericka the great', monospace;
+}
+/*---------DESSERTS--MENU--FORM--STYLES--------*/
+.dessert-menu h3, .dessert-menu p{
+   text-align: center;
+   font-family: 'lato', monospace;
+   color: var(--primary);
+}
+
+.form-head{
+    text-align: center;
+    font-size: 1.3em;
+}
+#dessert-extras{
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-position:bottom left;
+    padding: 30px 20px;
+    max-width: 450px;
+    margin:30px auto;
+    background-color: var(--myRgba);
+    border-radius: 15px;
+}
+ 
+.thanks{
+    text-align: center;
+    padding: 25px;
+    padding: 20px 30px;
+    margin: 0 auto;
+    max-width:100%;
+    position: relative;
+    top:0;
+    left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:200px;
+}
+
+.thanks h1{
+    font-family:  monospace;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--secondary);
+    font-weight: bolder;
+}
+
+/*----------POP-UP---------*/
+
+#popup-wrapper{
+    background: rgba(109, 12, 165, 0.502);
+    position: fixed;
+    top: 30px;
+    left:0;
+    width: 100%;
+    height: 100%;
+    display:none;
+}
+
+.popup{
+    position: relative;
+    font-family: 'lato', monospace;
+    color: var(--primary);
+    background: #fff;
+    text-align: center;
+    width:100%;
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 20px;
+}
+
+.popup a{
+    text-decoration: none;
+    color:var(--secondary);
+    background: #dc143c;
+    border-radius: 15px;
+    padding: 6px 10px;
+}
+
+.popup a:hover{
+    color:var(--primary);
+}
+
+.popup-close{
+    position: absolute;
+    cursor: pointer;
+    top: 5px;
+    right: 8px;
+}
+
+/*Desserts---Footer----Pseudo--Class--Polygon*/
+
+.desserts-title{
+    text-align: center;
+    font-size: 2em;
+    color: var(--secondary);
+}
+
+/*-----------MENU---FOOTER---SECTION---STYLES*/
+.scroll img:hover {
+    background-color: yellow;
+    border-radius: 50%;
+}
+.thanks a{
+    display: inline-block;
+    max-width: 100px;
+    width: 50px;
+    margin-left: 50px;
+    text-align: center;
+}
+.scroll a img{
+    display: block;
+    position: relative;
+    top: 100px;
+    left:0;
+}
+.btm-text p{
+    background: var(--myRgba);
+    text-align: left;
+}
+.bye{
+    text-align: center;
+    font-weight: bolder;
+}
+    /*SMALL TABLET STYLES*/
+/*MOBILE---HAMBURGER----MENU*/
+@media screen and (max-width: 768px){
+#top-menu{
+    width: 35px;
+    height: 30px;
+    margin: 30px 0 20px 20px;
+    cursor:pointer;
+    margin-left: 70px;
+}
+.thanks::before{
+    width: 97%;
+}
+
+.bar{
+    display: block;
+    background: magenta;
+    height:2px;
+    width: 100%;
+    border-radius: 5px;
+    transition: 0.3s ease-out;
+}
+
+#bar-1{
+    transform: translateY(-4px);
+}
+
+#bar-3{
+    transform: translateY(4px);
+}
+
+.nav{
+    padding: 0;
+    margin: 0 20px;
+    transition: 0.3s ease;
+    display: none;
+}
+.nav li{
+    padding: 16px 0;
+    font-family: monospace;
+}
+
+.menu-bg, #menu-bar{
+    position: absolute;
+    top:0;
+    left: -0; 
+}
+.menu-bg{
+    z-index: 1;
+    width: 0;
+    height: 0;
+    margin: 30px 0 20px 20px;
+    background: radial-gradient(circle, #e94498, #b81568);
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+#menu-bar{
+    z-index: 2;
+}
+.change-bg{
+    width: 900px;
+    height: 750px;
+    transform: translate(-60%, -30%);
+    transition: 1s ease-in;
+}
+.change .bar{
+    background-color: #fff;
+}
+.change #bar-1{
+    transform: translateY(2px) rotateZ(-45deg);  
+}
+.change #bar-3{
+    transform: translateY(-2px) rotate(45deg);
+}
+.change #bar-2{
+    opacity: 0;
+}
+.change{
+    display: block;
+}   
+}
+
+@media screen and (min-width: 460px){
+#drink-order form {
+    margin:30px auto;
+}
+.banner-text{
+    margin-left: 250px;
+    padding: 30px;
+ }
+ .site-nav{
+    background-image: url('Assets/Burgers/MenuBurger.png');
+    background-position: bottom left;
+    background-size: 40%;
+}
+
+}
+
+@media screen and (max-width: 459px){
+.banner-text{
+    margin: 100px;
+    margin-top: 150px;
+    padding: 30px;
+    background: var(--myRgba);
+    border-radius: 25px;
+ }
+
+.best_quality{
+    font-size: 1em;
+}
+
+.leading{
+    font-size: 1.2em;
+}
+
+}
+/*LARGE TABLET/LAPTOP STYLES*/
+@media screen and (min-width: 960px){
+body{
+    font-size: 18px;
+    }
+.site-nav{
+    background-image: url('Assets/Burgers/MenuBurger.png');
+    background-size: 35%;
+    background-position: top left;
+}
+#advert{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 95%;
+}
+
+
+.advert-left-col {
+    width: 100%;
+    padding: 15px 0;
+    flex-basis: 45%;
+}
+
+.advert-right-col{
+    flex-basis: 55%;
+}
+
+.advert-right-col img{
+    width: 100%;
+    margin-left: 100px;
+}
+.advert-text{
+    max-width: 100%;
+    
+}
+.welcome-text{
+    max-width: 450px;
+    min-width: 250px;
+    text-align: center;
+    font-weight: bolder;
+    color: rgb(255, 216, 43);
+    line-height: 1.8;
+} 
+.scroll-1 img{
+    position: relative;
+    top: 10px;
+    left: 92%;
+    max-width: 50px;
+    width: 50%;
+}
+#drink-order form {
+    margin:30px auto;
+}
+.scroll a img{
+    display: block;
+    position: relative;
+    top: 100px;
+    left: 200px;
+}
+#desserts-page{
+    padding: 30px 20px;
+    margin: 0 auto;
+    width: 95%;
+    margin-bottom: 20px;
+}
+.banner-text{
+    margin-left: 400px;
+    padding: 30px;
+ }
+}
+
+/*DESKTOP STYLES*/
+@media screen and (min-width: 1200px){
+body{
+        font-size: 20px;
+    } 
+.banner-text{
+    position: relative;
+    left: 125px;
+    bottom: 50px;
+ }
+ 
+.site-nav::before{
+    top:891px;
+}
+
+.welcome-text{
+    margin: -25px;
+    max-width: 500px;
+}
+
+.banner-text{
+    margin-left: 400px;
+    padding: 30px;
+ }
+
+.scroll-1 img{
+    position: relative;
+    top:0;
+    left: 85%;
+    max-width: 50px;
+    width: 50%;
+}
+#drink-order form {
+    margin:30px auto;
+}
+.scroll a img{
+    display: block;
+    position: relative;
+    top: 100px;
+    left: 250px;
+}
+#desserts-page{
+    padding: 30px 20px;
+    margin: 0 auto;
+    width: 95%;
+    margin-bottom: 20px;
+}
+.site-nav{
+    background-image: url('Assets/Burgers/MenuBurger.png');
+    background-size: 40%;
+    background-position: top left;
+    height: 650px;
+}
+
+}
