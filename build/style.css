@@ -102,7 +102,7 @@ strong {
   background-repeat: no-repeat;
   background-size: 50%;
   background-position: bottom left;
-  width: 100%;
+  max-width: 90%;
   height: 500px;
   position: relative;
   top: 0;
@@ -155,7 +155,7 @@ nav {
 
 #advert {
   margin: 0 auto;
-  width: 95%;
+  max-width: 90%;
 }
 /*Advertisment Section*/
 .advert-left-col {
@@ -193,6 +193,8 @@ nav {
 
 #footer {
   padding: 10px 45px;
+  max-width: 83%;
+  margin: auto;
 }
 .social-media {
   display: flex;
@@ -208,8 +210,6 @@ nav {
 
 .closing {
   padding: 30px 20px;
-  grid-column: 2/8;
-  grid-row: 2;
   text-align: center;
   margin: 0 auto;
   border-radius: 20px;
