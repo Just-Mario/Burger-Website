@@ -245,10 +245,6 @@ span {
   flex-wrap: wrap;
 }
 
-.about-col h4 {
-  font-family: 'lato', monospace;
-}
-
 .about-col p,
 .about-col,
 .about-col-1,
@@ -262,13 +258,21 @@ span {
   flex-basis: 25%;
   text-align: center;
 }
-.about-col p{
-  padding-bottom: 5px;
+.about-col p {
+  padding-bottom: 10px;
 }
-.about-col h4, .about-col-2 h4{
+.about-col h4 {
   padding-bottom: 25px;
 }
 
+.about-col-2 h4 {
+  padding-bottom: 15px;
+}
+.about-col img,
+.about-col-1 img,
+.about-col-2 img {
+  width: 100px;
+}
 
 #information h1 {
   text-align: center;
@@ -853,12 +857,13 @@ textarea {
     max-width: 100%;
     margin: auto;
   }
-  .about-col h4, .about-col-2 h4{
-  padding-bottom: 0px;
-}
-#information{
-  padding: 100px 30px;
-}
+  .about-col h4,
+  .about-col-2 h4 {
+    padding-bottom: 0px;
+  }
+  #information {
+    padding: 100px 30px;
+  }
 }
 /*LARGE TABLET/LAPTOP STYLES*/
 @media screen and (min-width: 960px) {
