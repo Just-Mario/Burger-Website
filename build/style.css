@@ -102,7 +102,7 @@ strong {
   background-repeat: no-repeat;
   background-size: 50%;
   background-position: bottom left;
-  max-width: 90%;
+  max-width: 100%;
   height: 500px;
   position: relative;
   top: 0;
@@ -244,20 +244,32 @@ span {
   justify-content: space-around;
   flex-wrap: wrap;
 }
-.about-col {
-  flex-basis: 25%;
-  text-align: center;
-  background-color: var(--myRgba);
-  padding: 0 15px;
-  padding-bottom: 60px;
-  border-radius: 20px;
-  border-bottom: 2px solid #d38107;
-  margin: 15px;
-  box-shadow: 2px 2px 5px var(--primary);
-}
+
 .about-col h4 {
   font-family: 'lato', monospace;
 }
+
+.about-col p,
+.about-col,
+.about-col-1,
+.about-col-2 {
+  font: normal 500 15px/20px 'lato', monospace;
+}
+
+.about-col,
+.about-col-1,
+.about-col-2 {
+  flex-basis: 25%;
+  text-align: center;
+}
+.about-col p{
+  padding-bottom: 5px;
+}
+.about-col h4, .about-col-2 h4{
+  padding-bottom: 25px;
+}
+
+
 #information h1 {
   text-align: center;
   max-width: 500px;
@@ -269,7 +281,9 @@ span {
   color: var(--secondary);
   margin-bottom: 50px;
   font-family: 'lato', monospace;
-  max-width: 90%;
+  max-width: 80%;
+  margin: auto;
+  padding-bottom: 50px;
 }
 /*---------CONTACT-FORM---------*/
 #contact {
@@ -334,7 +348,7 @@ span {
 .scroll-1 img {
   position: relative;
   top: 8px;
-  left: 75%;
+  left: 73%;
   max-width: 50px;
   width: 50%;
 }
@@ -364,7 +378,6 @@ span {
   margin: 10px;
   padding: 20px;
   max-width: 250px;
-  /*transition: 1s;*/
   cursor: pointer;
 }
 .dish h2 {
@@ -826,6 +839,7 @@ textarea {
   .leading {
     font-size: 1.2em;
   }
+
   .twtr,
   .fb,
   .ig {
@@ -833,6 +847,18 @@ textarea {
     max-width: 50px;
     margin: 0 auto;
   }
+
+  .hours {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+  }
+  .about-col h4, .about-col-2 h4{
+  padding-bottom: 0px;
+}
+#information{
+  padding: 100px 30px;
+}
 }
 /*LARGE TABLET/LAPTOP STYLES*/
 @media screen and (min-width: 960px) {
