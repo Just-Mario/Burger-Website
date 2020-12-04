@@ -139,11 +139,16 @@ nav {
 .est {
   padding-top: 20px;
   font-weight: bold;
-  color: var(--primary);
+  color: var(--secondary);
 }
 
 .intro-text {
   max-width: 350px;
+  letter-spacing: 4px;
+}
+
+.intro-text b {
+  color: var(--primary);
 }
 .leading,
 .est,
