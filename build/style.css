@@ -816,11 +816,15 @@ textarea {
 }
 
 @media screen and (max-width: 459px) {
+  .site-nav {
+    background-color: var(--myRgba);
+    background-size: 35%;
+  }
+
   .banner-text {
     margin: 100px;
     margin-top: 150px;
     padding: 30px;
-    background: var(--myRgba);
     border-radius: 25px;
   }
 
