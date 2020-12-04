@@ -849,10 +849,7 @@ textarea {
     max-width: 100%;
     margin: auto;
   }
-  .about-col h4,
-  .about-col-2 h4 {
-    padding-bottom: 0px;
-  }
+
   #information {
     padding: 100px 30px;
   }
